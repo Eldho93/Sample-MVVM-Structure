@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="bostonUniversityRed">#ffcc0000</color>
+    <color name="richElectricBlue">#ff0099cc</color>
+    <color name="avocado">#ff669900</color>
+    <color name="americanOrange">#ffff8800</color>
+    <color name="antiFlashWhite">#F1F5F9</color>
+</resources>

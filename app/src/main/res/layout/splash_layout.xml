@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/antiFlashWhite">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <View
+        android:layout_width="@dimen/squareSize"
+        android:layout_height="@dimen/squareSize"
+        android:id="@+id/squareOne"
+        android:background="@drawable/square_shape_green"
+        app:customSquareColor="@color/avocado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideLine" />
+
+
+    <View
+        android:layout_width="@dimen/squareSize"
+        android:layout_height="@dimen/squareSize"
+        android:id="@+id/squareTwo"
+        android:background="@drawable/square_shape_red"
+        app:layout_constraintEnd_toStartOf="@+id/squareOne"
+        app:layout_constraintTop_toBottomOf="@+id/squareOne" />
+
+
+    <View
+        android:layout_width="@dimen/squareSize"
+        android:layout_height="@dimen/squareSize"
+        android:id="@+id/squareThree"
+        android:background="@drawable/square_shape_blue"
+        app:customSquareColor="@color/avocado"
+        app:layout_constraintStart_toEndOf="@id/squareOne"
+        app:layout_constraintTop_toBottomOf="@+id/squareTwo" />
+
+    <TextView
+        android:id="@+id/txtApplicationName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Application Name"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squareThree"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flow"
+        app:constraint_referenced_ids="squareFour,squareFive,squareSix"
+        app:layout_constraintTop_toBottomOf="@+id/txtApplicationName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:layout_width="@dimen/squareSize"
+        android:layout_height="@dimen/squareSize"
+        android:id="@+id/squareFour"
+        android:background="@drawable/square_shape_orange"
+       />
+    <View
+        android:layout_width="@dimen/squareSize"
+        android:layout_height="@dimen/squareSize"
+        android:id="@+id/squareFive"
+        android:background="@drawable/square_shape_blue"
+         />
+    <View
+        android:layout_width="@dimen/squareSize"
+        android:layout_height="@dimen/squareSize"
+        android:id="@+id/squareSix"
+        android:background="@drawable/square_shape_green"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
